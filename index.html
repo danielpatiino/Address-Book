@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Address Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Address Book</h1>
+
+        <input type="text" id="searchInput" placeholder="Search..." oninput="filterEntries()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Telephone</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="entryList"></tbody>
+        </table>
+
+        <h2>Add New Entry</h2>
+        <form id="entryForm">
+            <input type="text" id="name" placeholder="Add name" required>
+            <input type="tel" id="phone" placeholder="Add phone number">
+            <input type="email" id="email" placeholder="Add email">
+            <button type="submit">Add Entry</button>
+        </form>
+    </div>
+
+        <img src="doge.gif" alt="Doge GIF" class="doge-gif left">
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
